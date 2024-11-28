@@ -59,7 +59,7 @@ passport.deserializeUser((obj, next) => {
 
 // Basic login page.
 app.get("/login", (req, res) => {
-  res.send('<form method="post" action="/dologin"><label>Username:</label><input name="username"/><label>Password:</label><input name="password" type="password"/><button type="submit">Login</button></form>');
+  res.send('<form method="post" action="/dologin"><label for="username">Username:</label><input name="username"/><label for="password">Password:</label><input name="password" type="password"/><button type="submit">Login</button></form>');
 });
 
 // Login attempts are routed to Passport, redirecting on success/failure
